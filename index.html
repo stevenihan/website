@@ -14,8 +14,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="/assets/style.min.css">
-
     <title>Steven Ihan - Software Development Engineer</title>
   </head>
   <body>
@@ -47,6 +45,26 @@
         Please enable your javascript.
       </div>
     </noscript>
+
+    <!-- Begin Deferred Styles -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="/assets/style.min.css">
+    </noscript>
+
+    <script type="text/javascript">
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById('deferred-styles');
+        var replacement = document.createElement('div');
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <!-- End Deferred Styles -->
 
     <!-- Begin GA -->
     <script type="text/javascript">
