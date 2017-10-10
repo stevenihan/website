@@ -14,9 +14,13 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <style type="text/css">
+      body,html{height:100%}body{display:flex;flex-direction:column;font:16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;overflow-y:auto;-webkit-font-smoothing:antialiased;color:#666;line-height:1;margin:0}.stevenihan__navigation{text-align:right;padding:20px 20px 0;z-index:100}.stevenihan__navigation-a{text-decoration:none;color:#5BADF0;font-size:13px;line-height:1.35;padding:8px}.stevenihan__navigation-a:hover{text-decoration:underline}.stevenihan__wrapper{margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px;max-width:600px}.stevenihan__header{text-align:center;border-bottom:1px solid #EEE;margin-bottom:40px;padding-bottom:40px;padding-top:100px}.stevenihan__header-avatar{background-color:#222;color:#FFF;border-radius:50%;height:80px;width:80px;line-height:80px;margin-bottom:28px;margin-left:auto;margin-right:auto}.stevenihan__header-title{color:#222;font-size:3em;font-weight:600;letter-spacing:-2px;margin:0}.stevenihan__header-subtitle{color:#666;font-size:20px;font-weight:300;line-height:1.3em;margin-top:12px}.stevenihan__container{display:flex;flex-direction:column;flex:1}.stevenihan__content{flex:1}.stevenihan__kaspay{text-decoration:none;color:#008DDF;font-weight:400}.stevenihan__footer-p{color:#999;font-size:14px;line-height:1.5;margin-bottom:16px;margin-top:0}.stevenihan__bobby{margin-bottom:0}.stevenihan__bobby-a{text-decoration:none;color:#666;font-weight:500}
+    </style>
+
     <title>Steven Ihan - Software Development Engineer</title>
   </head>
-  <body>
+  <body id="stevenihan__body" class="stevenihan__hide">
     <nav class="stevenihan__navigation">
       <a class="stevenihan__navigation-a" href="https://github.com/stevenihan">Github</a>
       <a class="stevenihan__navigation-a" href="https://twitter.com/_stevenihan">Twitter</a>
@@ -45,26 +49,6 @@
         Please enable your javascript.
       </div>
     </noscript>
-
-    <!-- Begin Deferred Styles -->
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="/assets/style.min.css">
-    </noscript>
-
-    <script type="text/javascript">
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById('deferred-styles');
-        var replacement = document.createElement('div');
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
-    <!-- End Deferred Styles -->
 
     <!-- Begin GA -->
     <script type="text/javascript">
