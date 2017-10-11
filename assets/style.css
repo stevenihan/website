@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font: 16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-rendering: optimizeLegibility;
   overflow-y: auto;
@@ -14,6 +12,13 @@ body {
   height: 100%;
   line-height: 1;
   margin: 0px;
+}
+
+#stevenihan {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .stevenihan__navigation {
@@ -29,6 +34,7 @@ body {
   color: #5BADF0;
   font-size: 13px;
   line-height: 1.35;
+  margin-left: 8px;
   padding: 8px;
 }
 
@@ -37,10 +43,12 @@ body {
 }
 
 .stevenihan__wrapper {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+  width: 100%;
   max-width: 600px; 
 }
 
@@ -83,13 +91,6 @@ body {
 }
 
 .stevenihan__container {
-  display: flex;
-  flex-direction: column;
-
-  flex: 1;
-}
-
-.stevenihan__content {
   flex: 1;
 }
 
@@ -106,6 +107,8 @@ body {
   line-height: 1.5;
   margin-bottom: 16px;
   margin-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .stevenihan__bobby {
